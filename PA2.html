@@ -35,6 +35,11 @@
         <td>Make everything Blue</td>
         <td><button onclick="blueify()">Blue</button></td>
     </tr>
+    <tr>
+        <td>Red</td>
+        <td>Make everything Red</td>
+        <td><button onclick="redify()">Red</button></td>
+    </tr>
 </table>
 
 
@@ -73,6 +78,10 @@
 
         function blueify() {
             page += "<style>body{background-color: lightblue; color: blue;}</style>";
+        }
+
+        function redify() {
+            page += "<style>body{background-color: tomato; color: white;}</style>";
         }
 
         </script>
