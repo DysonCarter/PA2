@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+<h1> A Simple Web Page Creator </h1>
+
+<table border="1" style="width:100%">
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Open</td>
+        <td>Open the design window</td>
+        <td><button onclick="openWin()">Open</button></td>
+    </tr>
+    <tr>
+        <td>Button</td>
+        <td>Add a button to the design window</td>
+        <td><button onclick="addButton()">Add</button></td>
+    </tr>
+    <tr>
+        <td>Examples</td>
+        <td>Add a button to open the example window</td>
+        <td><button onclick="addExamples()">Add</button></td>
+    </tr>
+    <tr>
+        <td>Close</td>
+        <td>Close the design window</td>
+        <td><button onclick="closeWindow()">Close</button></td>
+    </tr>
+    <tr>
+        <td>Blue</td>
+        <td>Make everything Blue</td>
+        <td><button onclick="blueify()"></button></td>
+    </tr>
+</table>
+
+
+        <button onclick='window.open("http://www.w3schools.com/jsref/obj_window.asp")'>References</button>
+        <button onclick='window.open("http://www.w3schools.com/jsref/met_win_open.asp")'>Examples</button>
+        
+        <script>
+        var page = "<p>ISP</p>";
+        var myWindow = null;
+        
+        function openWin() {
+	    if(myWindow != null) myWindow.close();
+            myWindow = window.open("", "ISP", "width=800,height=168");
+            myWindow.document.write(page);
+            }
+        
+        function addButton() {
+            page += "<button>A do nothing button</button>";
+        }
+
+        function addExamples() {
+            page += "<button onclick='window.open(" + "\"" + "http://www.w3schools.com/jsref/met_win_open.asp" + "\"" + ")'>Examples</button>";
+        }
+        
+        function closeWindow() {
+            myWindow.close();
+        }
+ 
+        function reference() {
+            window.open("http://www.w3schools.com/jsref/obj_window.asp");
+        }
+        
+        function examples() {
+            window.open("http://www.w3schools.com/jsref/met_win_open.asp");
+        }
+
+        function blueify() {
+            
+        }
+
+        </script>
+ 
+ <h2> Features </h2>
+
+        <table border="1" style="width:100%">
+            <tr>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JavaScript</th>
+                <th>XML</th>
+                <th>Others</th>
+            </tr>
+            <tr>
+                <th>Table</th>
+                <th>None</th>
+                <th>Window</th>
+                <th>None</th>
+                <th>None</th>
+            </tr>
+            <tr>
+                <th>.</th>
+                <th>None</th>
+                <th>Event-driven Programming</th>
+                <th>None</th>
+                <th>None</th>
+            </tr>
+        </table>
+        
+        
+    </body>
+</html>
+
