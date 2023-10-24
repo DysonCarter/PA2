@@ -46,6 +46,11 @@
         <td><button onclick="greenify()">Green</button></td>
     </tr>
     <tr>
+        <td>Add Heading</td>
+        <td>Big bold writing of your own</td>
+        <td><button onclick="addHeading()">Add</button></td>
+    </tr>
+    <tr>
         <td>Paragraph</td>
         <td>Write a paragraph of your own</td>
         <td><button onclick="addParagraph()">Add</button></td>
@@ -96,6 +101,11 @@
 
         function greenify() {
             page += "<style>body{background-color: green; color: palegreen;}</style>";
+        }
+
+        function addHeading() {
+            let heading = prompt("Please enter the heading you would like to be displayed","Hello, this is a heading");
+            page += `<h1> ${heading} </h1>`;
         }
 
         function addParagraph() {
