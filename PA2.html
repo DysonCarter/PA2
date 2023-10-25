@@ -70,6 +70,11 @@
         <td>Change font of webpage to Georgia</td>
         <td><button onclick="makeGeorgia()">Change</button></td>
     </tr>
+    <tr style="font-family: fantasy";>
+        <td>Font: fantasy</td>
+        <td>Change font of webpage to fantasy family</td>
+        <td><button onclick="makeFantasy()">Change</button></td>
+    </tr>
 </table>
 
 
@@ -134,11 +139,15 @@
         }
 
         function makeHelvetica() {
-            page += "<style>body{font-family: Arial, Helvetica, sans-serif;}</style>"
+            page += "<style>body{font-family: Arial, Helvetica, sans-serif};</style>";
         }
         
         function makeGeorgia() {
-            page += "<style>body{font-family: Georgia, 'Times New Roman', Times, serif;}</style>"
+            page += "<style>body{font-family: Georgia, 'Times New Roman', Times, serif};</style>";
+        }
+
+        function makeFantasy() {
+            page += "<style>body{font-family: fantasy};</style>";
         }
         </script>
  
