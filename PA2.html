@@ -45,6 +45,11 @@
         <td>Make everything Green</td>
         <td><button onclick="greenify()">Green</button></td>
     </tr>
+    <tr style="background-image: linear-gradient(to bottom right, orange, yellow, mediumseagreen);">
+        <td>Gradient background</td>
+        <td>Make the background a gradient</td>
+        <td><button onclick="gradientIt()">Gradient</button></td>
+    </tr>
     <tr>
         <td>Add Heading</td>
         <td>Big bold writing of your own</td>
@@ -148,6 +153,10 @@
 
         function makeFantasy() {
             page += "<style>body{font-family: fantasy};</style>";
+        }
+
+        function gradientIt() {
+            page += "<style>body{background-image: linear-gradient(to bottom right, orange, yellow, mediumseagreen);}</style>";
         }
         </script>
  
