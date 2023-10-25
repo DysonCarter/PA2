@@ -55,6 +55,11 @@
         <td>Write a paragraph of your own</td>
         <td><button onclick="addParagraph()">Add</button></td>
     </tr>
+    <tr>
+        <td>Add Image</td>
+        <td>Upload an image to your site</td>
+        <td><button onclick="addImage()">Add</button></td>
+    </tr>
 </table>
 
 
@@ -111,6 +116,11 @@
         function addParagraph() {
             let paragraph = prompt("Please enter the paragraph you would like to be displayed", "Hello, this is a paragraph");
             page += `<p> ${paragraph} </p>`;
+        }
+
+        function addImage() {
+            let picture = prompt("Please enter the source of your image");
+            page += `<img src=${picture}>`;
         }
         </script>
  
