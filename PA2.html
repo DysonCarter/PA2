@@ -60,6 +60,11 @@
         <td>Upload an image to your site</td>
         <td><button onclick="addImage()">Add</button></td>
     </tr>
+    <tr style="font-family: Arial, Helvetica, sans-serif;">
+        <td>Font: sans-serif</td>
+        <td>Change font of webpage to sans-serif family</td>
+        <td><button onclick="makeHelvetica()">Change</button></td>
+    </tr>
 </table>
 
 
@@ -121,6 +126,10 @@
         function addImage() {
             let picture = prompt("Please enter the source of your image");
             page += `<img src=${picture}>`;
+        }
+
+        function makeHelvetica() {
+            page += "<style>body{font-family: Arial, Helvetica, sans-serif;}</style>"
         }
         </script>
  
