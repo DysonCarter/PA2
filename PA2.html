@@ -30,17 +30,17 @@
         <td>Add a button to open the example window</td>
         <td><button onclick="addExamples()">Add</button></td>
     </tr>
-    <tr>
+    <tr style="background-color: darkslateblue; color: white;">
         <td>Blue</td>
         <td>Make everything Blue</td>
         <td><button onclick="blueify()">Blue</button></td>
     </tr>
-    <tr>
+    <tr style="background-color: tomato; color: white;">
         <td>Red</td>
         <td>Make everything Red</td>
         <td><button onclick="redify()">Red</button></td>
     </tr>
-    <tr>
+    <tr style="background-color: seagreen; color: white;">
         <td>Green</td>
         <td>Make everything Green</td>
         <td><button onclick="greenify()">Green</button></td>
@@ -112,7 +112,7 @@
         }
 
         function blueify() {
-            page += "<style>body{background-color: lightblue; color: white;}</style>";
+            page += "<style>body{background-color: darkslateblue; color: white;}</style>";
         }
 
         function redify() {
@@ -120,7 +120,7 @@
         }
 
         function greenify() {
-            page += "<style>body{background-color: palegreen; color: white;}</style>";
+            page += "<style>body{background-color: seagreen; color: white;}</style>";
         }
 
         function addHeading() {
