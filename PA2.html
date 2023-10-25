@@ -80,6 +80,11 @@
         <td>Change font of webpage to fantasy family</td>
         <td><button onclick="makeFantasy()">Change</button></td>
     </tr>
+    <tr>
+        <td>Website</td>
+        <td>Include frame of another website within your website</td>
+        <td><button onclick="addWebsite()">Add</button></td>
+    </tr>
 </table>
 
 
@@ -157,6 +162,11 @@
 
         function gradientIt() {
             page += "<style>body{background-image: linear-gradient(to bottom right, orange, yellow, mediumseagreen);}</style>";
+        }
+
+        function addWebsite() {
+            let website = prompt("Please enter you website source", "www.example.com");
+            page += `<iframe src="${website}" height="200" width="300" title="Webpage"></iframe>`;
         }
         </script>
  
