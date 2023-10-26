@@ -115,6 +115,11 @@
         <td>Add a Horizontal Divider to break up content</td>
         <td><button onclick="divider()">Add</button></td>
     </tr>
+    <tr>
+        <td>Audio</td>
+        <td>Add audio to webpage</td>
+        <td><button onclick="addAudio()">Add</button></td>
+    </tr>
 </table>
 
 
@@ -223,6 +228,11 @@
 
         function makeImpact() {
             page += `<style>body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";};</style>`;
+        }
+
+        function addAudio() {
+            let audiosrc = prompt("Please enter the source of your audio file", "MP3 only");
+            page += `<audio controls><source src="${audiosrc}" type="audio/mpeg"></audio>`;
         }
         </script>
  
