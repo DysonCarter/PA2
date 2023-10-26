@@ -50,6 +50,11 @@
         <td>Make the page Cleveland Browns themed</td>
         <td><button onclick="browns()">Browns</button></td>
     </tr>
+    <tr style="background-color: yellow; color: hotpink;">
+        <td>Spring Theme</td>
+        <td>Make the page spring themed</td>
+        <td><button onclick="springtheme()">Spring</button></td>
+    </tr>
     <tr style="background-image: linear-gradient(to bottom right, orange, yellow, mediumseagreen);">
         <td>Gradient background</td>
         <td>Make the background a gradient</td>
@@ -84,6 +89,11 @@
         <td>Font: Georgia</td>
         <td>Change font of webpage to Georgia</td>
         <td><button onclick="makeGeorgia()">Change</button></td>
+    </tr>
+    <tr style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";>
+        <td>Font: Impact</td>
+        <td>Change font of webpage to impact family</td>
+        <td><button onclick="makeImpact()">Change</button></td>
     </tr>
     <tr style="font-family: fantasy";>
         <td>Font: fantasy</td>
@@ -193,6 +203,10 @@
             page += '<style>body{background-color: orange; color: brown;}</style>';
         }
 
+        function springtheme() {
+            page += `<style>body{background-color: yellow; color: hotpink;}</style>`;
+        }
+
         function divider() {
             page += "<hr></hr>"
         }
@@ -205,6 +219,10 @@
         function blockQuoute() {
             let quote = prompt("Please paste your block quote", '"I think therefore I am"');
             page += `<blockquote>${quote}</blockquote>`;
+        }
+
+        function makeImpact() {
+            page += `<style>body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";};</style>`;
         }
         </script>
  
