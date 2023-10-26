@@ -66,6 +66,11 @@
         <td><button onclick="addParagraph()">Add</button></td>
     </tr>
     <tr>
+        <td>Add Block Quote</td>
+        <td>Add an indented Block Quote to page</td>
+        <td><button onclick="blockQuoute()">Add</button></td>
+    </tr>
+    <tr>
         <td>Add Image</td>
         <td>Upload an image to your site</td>
         <td><button onclick="addImage()">Add</button></td>
@@ -195,6 +200,11 @@
         function adjustSize() {
             let size = prompt("Please enter font size", "12")
             page += `<style>p{ font-size: ${size}px </style>`;
+        }
+
+        function blockQuoute() {
+            let quote = prompt("Please paste your block quote", '"I think therefore I am"');
+            page += `<blockquote>${quote}</blockquote>`;
         }
         </script>
  
