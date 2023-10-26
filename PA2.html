@@ -66,9 +66,19 @@
         <td><button onclick="addHeading()">Add</button></td>
     </tr>
     <tr>
+        <td>Add Subheading</td>
+        <td>Smaller bold writing</td>
+        <td><button onclick="addSubheading()">Add</button></td>
+    </tr>
+    <tr>
         <td>Add Paragraph</td>
         <td>Write a paragraph of your own</td>
         <td><button onclick="addParagraph()">Add</button></td>
+    </tr>
+    <tr>
+        <td>Add italics</td>
+        <td>Add a paragraph of italicized text</td>
+        <td><button onclick="addItalics()">Add</button></td>
     </tr>
     <tr>
         <td>Add Block Quote</td>
@@ -173,9 +183,19 @@
             page += `<h1> ${heading} </h1>`;
         }
 
+        function addSubheading() {
+            let heading = prompt("Please enter the heading you would like to be displayed","Hello, this is a heading");
+            page += `<h2> ${heading} </h2>`;
+        }
+
         function addParagraph() {
             let paragraph = prompt("Please enter the paragraph you would like to be displayed", "Hello, this is a paragraph");
             page += `<p> ${paragraph} </p>`;
+        }
+
+        function addItalics() {
+            let paragraph = prompt("Please enter the paragraph you would like to be displayed", "Hello, this is a paragraph");
+            page += `<i> ${paragraph} </i>`;
         }
 
         function addImage() {
